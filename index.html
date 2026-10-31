@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="AS Tour and Travel — 24x7 taxi service in Uttar Pradesh. Book local rides, airport transfers and outstation cabs by WhatsApp or phone.">
+  <title>AS Tour and Travel | 24x7 UP Taxi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="AS Tour and Travel home">
+    <span class="brand-mark"><span class="checker">▦</span><b>AS</b></span>
+    <span class="brand-copy"><strong>AS TOUR AND TRAVEL</strong><small>24X7 <i>•</i> UP TAXI</small></span>
+  </a>
+  <div class="header-actions">
+    <div class="language-switch" aria-label="Choose language">
+      <button class="lang active" data-lang="en">EN</button><button class="lang" data-lang="hi">हिंदी</button>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+  <nav class="nav" id="nav">
+    <a href="#home" data-en="HOME" data-hi="होम">HOME</a>
+    <a href="#fleet" data-en="OUR FLEET" data-hi="हमारी गाड़ियाँ">OUR FLEET</a>
+    <a href="#services" data-en="SERVICES" data-hi="सेवाएँ">SERVICES</a>
+    <a href="#routes" data-en="ROUTES & FARES" data-hi="रूट और किराया">ROUTES & FARES</a>
+    <a href="#reviews" data-en="REVIEWS" data-hi="रिव्यू">REVIEWS</a>
+    <a href="#faq" data-en="FAQ" data-hi="सवाल-जवाब">FAQ</a>
+    <a href="#book" data-en="BOOK NOW" data-hi="बुक करें">BOOK NOW</a>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="hero-content">
+      <span class="kicker">24X7 TAXI SERVICE <b>•</b> UTTAR PRADESH</span>
+      <h1>YOUR JOURNEY.<br><em>OUR PRIORITY.</em></h1>
+      <p>Reliable cab service for local rides, airport transfers, outstation journeys and family trips. Book online or call us — a real person picks up.</p>
+      <div class="hero-buttons"><a class="btn yellow" href="#book">BOOK YOUR RIDE ↗</a><a class="btn outline" href="tel:+917451807053">☎ CALL NOW</a></div>
+      <div class="hero-points"><span>✓ 24×7 HELPLINE</span><span>✓ NO ADVANCE PAYMENT</span><span>✓ UP & NCR ROUTES</span></div>
+    </div>
+    <div class="hero-stamp"><strong>AS</strong><span>TOUR<br>AND TRAVEL</span></div>
+  </section>
+
+  <section class="booking section" id="book">
+    <div class="section-title"><span class="kicker">BOOK YOUR CAB</span><h2>LET'S GET YOU MOVING</h2><p>Share your trip details. Your booking request will open directly in WhatsApp.</p></div>
+    <form id="bookingForm" class="booking-form">
+      <label>TRIP TYPE<select id="tripType" required><option>One-way</option><option>Round trip</option><option>Airport transfer</option><option>Local ride</option><option>Pilgrimage trip</option></select></label>
+      <label>PICKUP LOCATION<input id="pickup" placeholder="Where should we pick you up?" required></label>
+      <label>DROP LOCATION<input id="drop" placeholder="Where are you going?" required></label>
+      <label>PICKUP DATE<input id="date" type="date" required></label>
+      <label>PICKUP TIME<input id="time" type="time" required></label>
+      <label>PASSENGERS<select id="passengers"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></label>
+      <label>YOUR NAME<input id="name" placeholder="Full name" required></label>
+      <label>PHONE NUMBER<input id="phone" type="tel" inputmode="tel" placeholder="Your mobile number" pattern="[+]?[0-9 ()-]{10,16}" required></label>
+      <label class="wide">ADDITIONAL NOTES<textarea id="notes" rows="2" placeholder="Luggage, return date or any special request (optional)"></textarea></label>
+      <div class="form-bottom"><small>No online payment required. Confirm fare and availability with our team.</small><button class="btn yellow" type="submit">SEND BOOKING ON WHATSAPP ↗</button></div>
+      <p class="form-error" id="formError" role="alert"></p>
+    </form>
+  </section>
+
+  <section class="section" id="services">
+    <div class="section-title"><span class="kicker">WHAT WE OFFER</span><h2>TRAVEL MADE SIMPLE</h2></div>
+    <div class="service-grid">
+      <article class="service-card"><div class="service-icon">⌂</div><h3>LOCAL & CITY RIDES</h3><p>Comfortable rides for shopping, work, appointments and everyday travel.</p><a href="#book">CALL TO BOOK <b>↗</b></a></article>
+      <article class="service-card"><div class="service-icon">✈</div><h3>AIRPORT TRANSFERS</h3><p>Pickup and drop service for Delhi, Jaipur, Agra and Jolly Grant airports.</p><a href="#book">CALL TO BOOK <b>↗</b></a></article>
+      <article class="service-card"><div class="service-icon">↗</div><h3>OUTSTATION TRIPS</h3><p>One-way and round-trip cabs for family visits, business and holidays.</p><a href="#routes">VIEW ROUTES <b>↗</b></a></article>
+      <article class="service-card"><div class="service-icon">✦</div><h3>PILGRIMAGE SPECIAL</h3><p>Plan trips to Ayodhya, Varanasi, Prayagraj, Mathura and other destinations.</p><a href="#routes">VIEW ROUTES <b>↗</b></a></article>
+      <article class="service-card"><div class="service-icon">▣</div><h3>HOTEL BOOKING</h3><p>Hotels for every budget, from budget stays to comfortable family hotels.</p><a href="tel:+917451807053">☎ CALL TO ENQUIRE</a></article>
+      <article class="service-card"><div class="service-icon">ϟ</div><h3>AIRPORT FAST PICKUP</h3><p>Delhi, Jaipur, Agra and Jolly Grant airports — call us to arrange your pickup.</p><a href="tel:+917451807053">☎ CALL TO ENQUIRE</a></article>
+    </div>
+  </section>
+
+  <section class="fleet-section" id="fleet">
+    <div class="fleet-heading"><span class="kicker">COMFORT ON THE ROAD</span><h2>OUR FLEET<br><em>YOUR PERFECT RIDE.</em></h2><p>Choose a vehicle for your journey. Share your route and passenger count and our team will confirm availability and fare.</p><a class="btn yellow" href="#book">CHOOSE YOUR RIDE ↗</a></div>
+    <div class="fleet-grid">
+      <article class="fleet-card"><img src="https://imgd-ct.aeplcdn.com/1280x720/n/cw/ec/159099/swift-exterior-left-front-three-quarter-26.jpeg?isig=0&q=80" alt="Maruti Suzuki Swift sedan category car"><div><span class="fleet-type">SEDAN</span><h3>MARUTI SWIFT</h3><p>Comfortable ride for city and outstation travel.</p></div></article>
+      <article class="fleet-card"><img src="https://cdn-s3.autocarindia.com/Maruti-Suzuki/Ertiga/_DSC0218.JPG?q=75&w=640" alt="Maruti Suzuki Ertiga SUV"><div><span class="fleet-type">SUV</span><h3>MARUTI ERTIGA</h3><p>Extra space for family trips and luggage.</p></div></article>
+      <article class="fleet-card"><img src="https://www.galaxytoyota.in/public/storage/1151/1.jpg" alt="Toyota Innova Crysta luxury SUV"><div><span class="fleet-type">LUXURY SUV</span><h3>TOYOTA INNOVA CRYSTA</h3><p>Premium comfort for longer journeys.</p></div></article>
+      <article class="fleet-card van-card"><div class="van-visual" role="img" aria-label="Passenger van">🚐</div><div><span class="fleet-type">VAN</span><h3>PASSENGER VAN</h3><p>Room for group travel and extra luggage.</p></div></article>
+    </div>
+  </section>
+
+  <section class="section routes-section" id="routes">
+    <div class="section-title"><span class="kicker">ROUTES & FARES</span><h2>FIXED OUTSTATION FARES</h2><p>We run one-way and round-trip plans on popular routes. Call us for today's fixed fare — no hidden charges.</p></div>
+    <div class="route-tabs" role="tablist">
+      <button class="route-tab active" data-route="popular">POPULAR OUTSTATION</button>
+      <button class="route-tab" data-route="airport">AIRPORT TRANSFERS</button>
+      <button class="route-tab" data-route="pilgrimage">PILGRIMAGE SPECIAL</button>
+    </div>
+    <div class="route-grid" id="routeGrid"></div>
+    <p class="fare-note">ⓘ Fixed outstation fares are given on call. Toll, parking and night allowance (if any) are confirmed clearly on the same call.</p>
+  </section>
+
+  <section class="section reviews-section" id="reviews">
+    <div class="section-title"><span class="kicker">REVIEWS</span><h2>WHAT CUSTOMERS SAY</h2></div>
+    <div class="review-grid">
+      <article class="review-card"><div class="stars">★★★★★</div><blockquote>“Booked on call at 9 at night, the car arrived at 5 in the morning sharp. Clean car, polite driver and a fair rate.”</blockquote><div class="review-person"><b>Ramesh Verma</b><span>⌖ Lucknow → Ayodhya, family trip</span></div></article>
+      <article class="review-card"><div class="stars">★★★★★</div><blockquote>“Very comfortable Ertiga for our family. The driver drove safely the whole way and never rushed us.”</blockquote><div class="review-person"><b>Pooja Singh</b><span>⌖ Lucknow → Varanasi, family trip</span></div></article>
+      <article class="review-card"><div class="stars">★★★★★</div><blockquote>“Easy booking over WhatsApp and clear communication about pickup time and fare.”</blockquote><div class="review-person"><b>Customer feedback</b><span>⌖ Airport transfer</span></div></article>
+    </div>
+    <p class="sample-note">Review text shown here is sample website content. Replace it with verified customer reviews before publishing.</p>
+  </section>
+
+  <section class="section faq-section" id="faq">
+    <div class="section-title"><span class="kicker">COMMON QUESTIONS</span><h2>GOOD TO KNOW</h2></div>
+    <div class="faq-list">
+      <details><summary>Do I have to pay any advance online?</summary><p>No online advance payment is required to send a booking request. Confirm the booking and payment terms with our team directly.</p></details>
+      <details><summary>Are toll, parking and taxes included in the fare?</summary><p>These depend on the route and trip plan. Our team will clarify toll, parking, taxes and any applicable night allowance when confirming your fare.</p></details>
+      <details><summary>Is night travel allowed?</summary><p>Yes, you can enquire about night travel through our 24×7 helpline. Vehicle and driver availability will be confirmed on call.</p></details>
+      <details><summary>Which areas do you serve?</summary><p>We serve Lucknow, Kanpur, Agra, Varanasi, Prayagraj, Ayodhya, Noida, Mathura and Delhi NCR, subject to availability.</p></details>
+      <details><summary>Do you also help with visa, passport and hotels?</summary><p>We can assist with hotel booking enquiries. Contact our team to confirm which additional travel services are currently available.</p></details>
+    </div>
+  </section>
+
+  <section class="contact-cta">
+    <span class="kicker">24X7 HELPLINE • UTTAR PRADESH, INDIA</span>
+    <h2>NEED A CAB RIGHT NOW?</h2>
+    <p>Call us any time — day or night. A real person picks up.</p>
+    <a class="contact-phone" href="tel:+917451807053">☎ +91 74518 07053</a>
+    <a class="contact-whatsapp" href="https://wa.me/917451807053" target="_blank" rel="noopener">☏ WHATSAPP US</a>
+    <a class="contact-email" href="mailto:maliksameermalik495@gmail.com">✉ maliksameermalik495@gmail.com</a>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="footer-main">
+    <div class="footer-about"><a class="footer-brand" href="#home">AS TOUR AND TRAVEL</a><p>Uttar Pradesh's own 24×7 taxi service. Book online or by phone — no advance payment.</p><a class="footer-call" href="tel:+917451807053">☎ +91 74518 07053</a></div>
+    <div class="footer-links"><span class="kicker">QUICK LINKS</span><a href="#home">HOME ↗</a><a href="#fleet">OUR FLEET ↗</a><a href="#services">SERVICES ↗</a><a href="#routes">ROUTES & FARES ↗</a><a href="#reviews">REVIEWS ↗</a><a href="#faq">FAQ ↗</a><a href="#book">BOOK NOW ↗</a></div>
+    <div class="footer-contact"><span class="kicker">CONTACT</span><p>24×7 helpline: <a href="tel:+917451807053">+91 74518 07053</a></p><p>WhatsApp: <a href="https://wa.me/917451807053">+91 74518 07053</a></p><p><a href="mailto:maliksameermalik495@gmail.com">✉ maliksameermalik495@gmail.com</a></p><p class="cities">Lucknow • Kanpur • Agra • Varanasi • Prayagraj • Ayodhya • Noida • Mathura • Delhi NCR</p></div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="year"></span> AS Tour and Travel. All rights reserved.</span><span>UTTAR PRADESH, INDIA</span></div>
+</footer>
+
+<div class="sticky-contact"><a href="tel:+917451807053">☎ &nbsp;+91 74518 07053</a><a href="https://wa.me/917451807053" target="_blank" rel="noopener">◉ &nbsp;WhatsApp</a></div>
+<script src="script.js"></script>
+</body>
+</html>
